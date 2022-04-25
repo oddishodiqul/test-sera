@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "d9f5ac0f-4a4f-47c0-9dc6-77ff5e60fffb",
+		"name": "Lumen-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"oddi@email.com\",\r\n    \"username\":\"oddi\",\r\n    \"password\":\"oddi123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/index",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/show/6266b9caf2c2bf639802eb72",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"show",
+						"6266b9caf2c2bf639802eb72"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andi@email.com\",\r\n    \"username\":\"andi\",\r\n    \"password\":\"hallo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andihuhu@email.com\",\r\n    \"username\":\"andi\",\r\n    \"password\":\"andihehe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/update/62661f162c0dfd84c6004732",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"update",
+						"62661f162c0dfd84c6004732"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ando@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/delete/626622bf8119931f230ce504",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"delete",
+						"626622bf8119931f230ce504"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9sb2dpbiIsImlhdCI6MTY1MDkwMDc3NSwiZXhwIjoxNjUwOTA0Mzc1LCJuYmYiOjE2NTA5MDA3NzUsImp0aSI6IktrUWdFU0RadUNwdXhRTHciLCJzdWIiOiI2MjY2YjljYWYyYzJiZjYzOTgwMmViNzIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cNwoNQZf7IcH4UJx_4VDmw0MeoUsSlTXR0LFx1Tnjyo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/logout",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9sb2dpbiIsImlhdCI6MTY1MDkwMDc3NSwiZXhwIjoxNjUwOTA0Mzc1LCJuYmYiOjE2NTA5MDA3NzUsImp0aSI6IktrUWdFU0RadUNwdXhRTHciLCJzdWIiOiI2MjY2YjljYWYyYzJiZjYzOTgwMmViNzIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cNwoNQZf7IcH4UJx_4VDmw0MeoUsSlTXR0LFx1Tnjyo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/check-login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"check-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "denom",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"eve.holt@reqres.in\",\r\n    \"password\":\"pistol\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/denom",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"denom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
